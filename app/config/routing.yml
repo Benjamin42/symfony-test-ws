@@ -1,0 +1,24 @@
+santorin:
+    resource: "@SantorinBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+nelmio_api_swagger:
+    resource: "@NelmioApiDocBundle/Resources/config/swagger_routing.yml"
+    prefix: /api-docs
+
+al_swagger_ui:
+    resource: "@ALSwaggerUIBundle/Resources/config/routing.yml"
+    prefix: /docs
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+users:
+    type:   rest
+    resource:   SantorinBundle\Controller\UsersController

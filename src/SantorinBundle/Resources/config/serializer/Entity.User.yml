@@ -1,0 +1,9 @@
+SantorinBundle\Entity\User:
+    exclusion_policy: ALL
+    properties:
+        id:
+            expose: true
+        lastname:
+            expose: true
+        firstname:
+            expose: true
